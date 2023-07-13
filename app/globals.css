@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -68,13 +70,13 @@
   }
 }
 ::-webkit-scrollbar {
-  @apply w-2 px-0.5;
+  @apply w-1;
 }
 ::-webkit-scrollbar-track {
   @apply bg-background;
 }
 ::-webkit-scrollbar-thumb {
-  @apply rounded-lg bg-foreground/20;
+  @apply rounded-lg bg-foreground/10;
 }
 @layer base {
   * {

@@ -5,7 +5,7 @@ export default function Logo() {
   return (
     <Link
       href="/"
-      className="text-base md:text-lg font-semibold flex items-center justify-center gap-x-1"
+      className="text-base md:text-lg font-semibold flex items-center justify-center gap-x-1.5"
     >
       <Sparkles className="h-5 w-5" strokeWidth={2} fill="currentColor" />
       lugat
