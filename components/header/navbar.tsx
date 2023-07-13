@@ -18,7 +18,7 @@ const Navbar = () => {
         </Link>
         <Separator orientation="vertical" />
         <Link href={'https://github.dev/cemtatli/lugat'} target="blank">
-          Source
+          GitHub
         </Link>
         <Separator orientation="vertical" />
       </div>

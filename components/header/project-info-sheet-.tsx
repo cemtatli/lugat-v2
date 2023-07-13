@@ -81,14 +81,14 @@ export function ProjectInfoSheet() {
                 target="blank"
                 className="text-sm !flex items-center gap-1.5"
               >
-                <GitForkIcon className=" w-4 h-4" />
+                <GitForkIcon className="w-4 h-4" />
                 {`Fork (${forkCount})`}
               </Link>
             </div>
           </SheetTitle>
         </SheetHeader>
         <Separator />
-        <SheetDescription className="pt-4 pb-2">
+        <SheetDescription className="pt-4 pb-2 dark:text-white/80">
           <span>
             Başta Frontend terimleri olmak üzere,tüm geliştiricilerin bilmesi
             gereken terimleri Türkçe anlamlarıyla açıklayan ve örneklerle
@@ -109,7 +109,9 @@ export function ProjectInfoSheet() {
                     <Skeleton className="h-10 w-10" />
                   </Avatar>
                 </Link>
-                <span className="text-sm">{contributor.login}</span>
+                <span className="text-sm">
+                  {contributor.login}
+                </span>
               </div>
             ))}
           </div>

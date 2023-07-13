@@ -1,76 +1,95 @@
 import React from 'react';
-
 import Link from 'next/link';
+import {
+  SiNextdotjs,
+  SiCss3,
+  SiHtml5,
+  SiJavascript,
+  SiReact,
+  SiTypescript,
+  SiVuedotjs,
+  SiAngular,
+  SiGit,
+  SiMdnwebdocs,
+} from 'react-icons/si';
 
 const SidebarMenuItem = () => {
   interface Link {
     title: string;
     href: string;
+    icon: any;
   }
 
   const links: Link[] = [
     {
       title: 'HTML',
-
-      href: '',
+      href: 'html',
+      icon: <SiHtml5 />,
     },
     {
       title: 'CSS',
-
-      href: '',
+      href: 'css',
+      icon: <SiCss3 />,
     },
     {
       title: 'JavaScript',
-
-      href: '',
+      href: 'javascript',
+      icon: <SiJavascript />,
+    },
+    {
+      title: 'TypeScript',
+      href: 'typescript',
+      icon: <SiTypescript />,
     },
     {
       title: 'React',
-
-      href: '',
+      href: 'react',
+      icon: <SiReact />,
     },
     {
       title: 'Vue.js',
-
-      href: '',
+      href: 'vuejs',
+      icon: <SiVuedotjs />,
     },
     {
       title: 'Angular',
-
-      href: '',
+      href: 'angular',
+      icon: <SiAngular />,
     },
     {
       title: 'Next.js',
-
-      href: '',
+      href: 'nextjs',
+      icon: <SiNextdotjs />,
     },
     {
       title: 'Git',
-
-      href: '',
+      href: 'git',
+      icon: <SiGit />,
     },
+
     {
       title: 'Web Development',
-
-      href: '',
-    },
-    {
-      title: 'Web Development',
-
-      href: '',
+      href: 'web-development',
+      icon: <SiMdnwebdocs />,
     },
     {
       title: 'Web Design',
-
-      href: '',
+      href: '/webdesign',
+      icon: <SiNextdotjs />,
+    },
+    {
+      title: 'Internet',
+      href: '/internet',
+      icon: <SiNextdotjs />,
     },
   ];
 
   return (
     <div className="text-sm flex flex-col items-start gap-y-4">
       {links.map((link, index) => (
-        <Link key={index} href={link.href}>
-          {link.title}
+        <Link key={index} href={link.href} className="flex items-center gap-2">
+          <div className="w-5 h-5"> {link.icon}</div>
+          <span>{link.title}</span>
         </Link>
       ))}
     </div>

@@ -1,18 +1,18 @@
-"use client"
+'use client';
 
-import * as React from "react"
+import * as React from 'react';
 import { MoonStar, SunMoonIcon, Monitor } from 'lucide-react';
-import { useTheme } from "next-themes"
-import { Button } from "@/components/ui/button"
+import { useTheme } from 'next-themes';
+import { Button } from '@/components/ui/button';
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu"
+} from '@/components/ui/dropdown-menu';
 
 export function ThemeToggle() {
-  const { setTheme } = useTheme()
+  const { setTheme } = useTheme();
 
   return (
     <DropdownMenu>
@@ -23,17 +23,20 @@ export function ThemeToggle() {
           <span className="sr-only">Toggle theme</span>
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent className="text-xs sm:text-sm font-medium min-w-[6.5rem]" align="end">
-        <DropdownMenuItem onClick={() => setTheme("light")}>
-          <SunMoonIcon aria-label={'theme'} size={16} className="mr-2" /> Light
+      <DropdownMenuContent
+        className="text-xs sm:text-sm font-medium min-w-[6.5rem]"
+        align="end"
+      >
+        <DropdownMenuItem onClick={() => setTheme('light')}>
+          <SunMoonIcon aria-label={'theme'} size={16} className="mr-2" /> Açık
         </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => setTheme("dark")}>
-          <MoonStar aria-label={'theme'} size={16} className="mr-2" /> Dark
+        <DropdownMenuItem onClick={() => setTheme('dark')}>
+          <MoonStar aria-label={'theme'} size={16} className="mr-2" /> Koyu
         </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => setTheme("system")}>
-          <Monitor aria-label={'theme'} size={16} className="mr-2" /> System
+        <DropdownMenuItem onClick={() => setTheme('system')}>
+          <Monitor aria-label={'theme'} size={16} className="mr-2" /> Sistem
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
-  )
+  );
 }
