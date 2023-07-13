@@ -1,12 +1,7 @@
-import { ProjectInfoSheet } from "./project-info-sheet-"
-
-
+import { ProjectInfoSheet } from './project-info-sheet-';
 
 const GitHubProject = () => {
+  return <ProjectInfoSheet />;
+};
 
-  return (
-    <ProjectInfoSheet />
-  )
-}
-
-export default GitHubProject
+export default GitHubProject;

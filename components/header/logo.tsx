@@ -1,11 +1,14 @@
-import Link from "next/link";
+import { Sparkles } from 'lucide-react';
+import Link from 'next/link';
 
 export default function Logo() {
-
   return (
-    <Link href="/" className="text-base md:text-lg font-semibold">
-
+    <Link
+      href="/"
+      className="text-base md:text-lg font-semibold flex items-center justify-center gap-x-1"
+    >
+      <Sparkles className="h-5 w-5" strokeWidth={2} fill="currentColor" />
       lugat
     </Link>
-  )
+  );
 }
