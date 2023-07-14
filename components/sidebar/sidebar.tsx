@@ -1,13 +1,10 @@
 import React from 'react';
-import SidebarMenu from '@/components/sidebar/sidebar-menu';
-import SearchBar from '@/components/ui/searchbar';
+import { Input } from '../ui/input';
 
 const Sidebar = () => {
   return (
-    <aside className="hidden md:flex flex-col gap-y-4 pt-4 px-2 w-60 shrink-0 h-full border-r">
-      <SearchBar />
-
-      <SidebarMenu />
+    <aside className="hidden md:flex flex-col gap-y-4 h-screen-fit pt-4 px-2 w-60 shrink-0 border-r">
+      <Input />
     </aside>
   );
 };

@@ -30,7 +30,6 @@ export function MobileMenu() {
               <SheetDescription>
                 Make changes to your profile here. Click save when you are done.
               </SheetDescription>
-
               <SheetFooter>
                 <Separator />
                 <div className="flex items-center justify-center gap-x-4 py-2">
