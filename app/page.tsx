@@ -3,7 +3,7 @@ import data from '@/data/data.json';
 
 export default function Home() {
   return (
-    <section className="h-full overflow-auto p-4">
+    <section className="h-full overflow-auto md:p-4 pt-4">
       {data.map((item) => (
         <div
           key={item.id}
