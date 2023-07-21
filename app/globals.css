@@ -69,20 +69,29 @@
     --ring: 217.2 32.6% 17.5%;
   }
 }
-::-webkit-scrollbar {
-  @apply w-1;
+* {
+  ::-webkit-scrollbar {
+    @apply w-1 h-1;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-background;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply rounded-lg bg-foreground/10;
+  }
 }
-::-webkit-scrollbar-track {
-  @apply bg-background;
-}
-::-webkit-scrollbar-thumb {
-  @apply rounded-lg bg-foreground/10;
-}
+
 @layer base {
   * {
     @apply border-border antialiased;
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  .codeblock {
+    @apply flex flex-col gap-2 mb-4 last:mb-0 border rounded-xl p-4;
   }
 }

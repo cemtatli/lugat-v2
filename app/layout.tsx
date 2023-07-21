@@ -3,7 +3,7 @@ import { Inter } from 'next/font/google';
 import { Metadata } from 'next';
 import { ThemeProvider } from '@/context/theme-provider';
 import Header from '@/components/header/header';
-import MainLayout from '@/layout/main-layout';
+import Layout from '@/layout/main-layout';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -11,7 +11,6 @@ export const metadata: Metadata = {
   title: 'Lugat | Türkçe Terimler',
   description:
     'Lugat, Türkçe karşılıklarıyla birlikte birçok terimin anlamını içeren bir web sitesidir.',
-  
 };
 
 export default function RootLayout({
@@ -24,7 +23,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <Header />
-          <MainLayout>{children}</MainLayout>
+          <Layout>{children}</Layout>
         </ThemeProvider>
       </body>
     </html>
