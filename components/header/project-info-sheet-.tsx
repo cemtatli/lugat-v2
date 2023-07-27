@@ -97,7 +97,7 @@ export function ProjectInfoSheet() {
           </span>
           <Separator className="my-4" />
           <h3 className="text-base font-medium">Katkıda Bulunanlar</h3>
-          <div className="flex items-center gap-x-8 mt-2 flex-wrap">
+          <div className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-8">
             {contributors.map((contributor: any) => (
               <div
                 key={contributor.id}
@@ -109,7 +109,7 @@ export function ProjectInfoSheet() {
                     <Skeleton className="h-10 w-10" />
                   </Avatar>
                 </Link>
-                <span className="text-sm">
+                <span className="hidden md:block text-sm truncate">
                   {contributor.login}
                 </span>
               </div>

@@ -12,6 +12,8 @@ import {
 } from '@/components/ui/sheet';
 import { Separator } from '@/components/ui/separator';
 import Logo from '@/components/header/logo';
+import { ProjectInfoSheet } from '../header/project-info-sheet-';
+import { Button } from '../ui/button';
 
 export function MobileMenu() {
   return (
@@ -32,6 +34,9 @@ export function MobileMenu() {
             <SheetDescription>
               Make changes to your profile here. Click save when you are done.
             </SheetDescription>
+            <Button variant={'outline'} className="mt-4">
+              <ProjectInfoSheet />
+            </Button>
             <SheetFooter>
               <Separator />
             </SheetFooter>
