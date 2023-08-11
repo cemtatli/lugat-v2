@@ -12,7 +12,7 @@ import {
 } from '@/components/ui/sheet';
 import { Separator } from '@/components/ui/separator';
 import Logo from '@/components/header/logo';
-import { ProjectInfoSheet } from '../header/project-info-sheet-';
+import { ProjectInfoSheet } from '../header/project-sheet';
 import { Button } from '../ui/button';
 
 export function MobileMenu() {

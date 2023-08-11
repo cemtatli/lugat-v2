@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { ThemeToggle } from '../theme-toggle';
 import { LanguageToggle } from '../language-toggle';
 import { Separator } from '../ui/separator';
-import { ProjectInfoSheet } from './project-info-sheet-';
+import { ProjectInfoSheet } from './project-sheet';
 
 const Navbar = () => {
   return (
@@ -13,11 +13,11 @@ const Navbar = () => {
       <div className="hidden md:flex h-5 items-center space-x-5 font-medium text-sm">
         <ProjectInfoSheet />
         <Separator orientation="vertical" />
-        <Link href={'https://twitter.com/'} target="blank">
+        <Link href={'https://twitter.com/iltatmec'} target="blank">
           Twitter
         </Link>
         <Separator orientation="vertical" />
-        <Link href={'https://github.dev/cemtatli/lugat'} target="blank">
+        <Link href={'https://github.com/cemtatli/lugat'} target="blank">
           GitHub
         </Link>
         <Separator orientation="vertical" />

@@ -65,7 +65,7 @@ export function ProjectInfoSheet() {
         <SheetHeader className="flex-col flex justify-start">
           <SheetTitle className="flex gap-x-5 md:h-8 mb-2 mt-6 md:mt-0">
             lugat
-            <div className="flex gap-4">
+            <span className="flex gap-4">   
               <Separator orientation="vertical" />
               <Link
                 href={'https://github.com/cemtatli/lugat/stargazers'}
@@ -84,7 +84,7 @@ export function ProjectInfoSheet() {
                 <GitForkIcon className="w-4 h-4" />
                 {`Fork (${forkCount})`}
               </Link>
-            </div>
+            </span>
           </SheetTitle>
         </SheetHeader>
         <Separator />
@@ -97,9 +97,9 @@ export function ProjectInfoSheet() {
           </span>
           <Separator className="my-4" />
           <h3 className="text-base font-medium">Katkıda Bulunanlar</h3>
-          <div className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-8">
+          <span className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-8">
             {contributors.map((contributor: any) => (
-              <div
+              <span
                 key={contributor.id}
                 className="flex items-center justify-center flex-col gap-1 mt-1.5"
               >
@@ -112,9 +112,9 @@ export function ProjectInfoSheet() {
                 <span className="hidden md:block text-sm truncate">
                   {contributor.login}
                 </span>
-              </div>
+              </span>
             ))}
-          </div>
+          </span>
         </SheetDescription>
       </SheetContent>
     </Sheet>

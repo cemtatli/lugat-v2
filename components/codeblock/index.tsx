@@ -14,7 +14,7 @@ const CodeExample = () => {
           <span className="text-sm"> {item.desc}</span>
           <div className="mt-5 flex items-center gap-2.5">
             {item.category.map((category, index) => (
-              <Badge variant={'secondary'} key={index}>
+              <Badge key={index}>
                 {category}
               </Badge>
             ))}
@@ -23,12 +23,13 @@ const CodeExample = () => {
             PreTag={'code'}
             showLineNumbers={true}
             wrapLongLines={true}
-            className="!bg-transparent border-none rounded-xl"
+            className="border-none rounded-lg"
             language={item.example?.lang}
             style={vs}
           >
             {item.example?.codeBlock}
           </SyntaxHighlighter>
+
         </div>
       ))}
     </>
